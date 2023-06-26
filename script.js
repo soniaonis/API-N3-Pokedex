@@ -1,8 +1,8 @@
 const poke_container = document.getElementById('poke-container')
 const pokemon_count = 150
 const colors = {
-    fire: '#FDDFDF',
-    grass: '#DEFDE0',
+  fire: '#FDDFDF',
+  grass: '#DEFDE0',
 	electric: '#FCF7DE',
 	water: '#DEF3FD',
 	ground: '#f4e7da',
@@ -40,9 +40,7 @@ const createPokemonCard = (pokemon) => {
   pokemonElement.style.backgroundColor = color;
 
   const imageSrc = pokemon.sprites.other['official-artwork'].front_default;
-//   const setImgPokemon = imgPokemon =>{
-//     let img = imgPokemon.sprites.front_default;
-//   };
+ 
   const pokemonInnerHTML = `
     <div class="img-container">
       <img src="${imageSrc}" alt="${name}"/>
